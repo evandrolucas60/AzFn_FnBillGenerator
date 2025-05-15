@@ -1,0 +1,24 @@
+
+.barcode-valid {
+  border: 2px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.barcode-invalid {
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.validation-message {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.validation-valid {
+  color: green;
+}
+
+.validation-invalid {
+  color: red;
+}

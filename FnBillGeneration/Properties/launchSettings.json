@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FnBillGeneration": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7147 --cors \"*\""
+    }
+  }
+}

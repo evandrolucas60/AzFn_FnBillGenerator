@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Código de Barras</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Gerador de Código de Barras</h1>
+            
+            <div class="form-group">
+                <label for="dataVencimento">Data de Vencimento:</label>
+                <input type="date" id="dataVencimento" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="valor">Valor (R$):</label>
+                <input type="number" id="valor" step="0.01" min="0" required>
+            </div>
+            
+            <button id="gerarButton" onclick="gerarCodigoBarras()">Gerar Código de Barras</button>
+            <button id="btn-validar-codigo" onclick="validarCodigo()">Validar Código</button>
+            
+            <div class="result" id="result">
+                <div class="loader" id="loader"></div>
+                <div id="resultContent" style="display: none;">
+                    <div class="barcode-container">
+                        <img id="barcodeImage" alt="Código de Barras">
+                    </div>
+                    <div class="barcode-text">
+                        <p>Código de barras:</p>
+                        <p id="barcodeText" class="code"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
